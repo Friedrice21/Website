@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 5px;
+        font-family: sans-serif;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      input[type="text"] text-area,
+      select {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-top: 5px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #5e50dd;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="komentar">Komentar :</label><br />
+      <textarea name="komentar" rows="5" cols="20" id="komentar"></textarea
+      ><br /><br />
+      <select name="Jurusan" id="Jurusan">
+        <option value="RPL">RPL</option>
+        <option value="TKJ">TKJ</option>
+        <option value="DKV">DKV</option>
+      </select>
+      <br /><br />
+      <label for="hobi">Hobi :</label><br />
+      <input type="checkbox" name="hobi" value="Membaca" id="Membaca" />Membaca
+      <br />
+      <input type="checkbox" name="hobi" value="Menulis" id="Menulis" />Menulis
+      <br />
+      <input type="checkbox" name="hobi" value="Ngoding" id="Ngoding" />Ngoding
+      <br /><br />
+      <label for="Jenis Kelamin">Jenis Kelamin :</label><br />
+      <input type="radio" name="Jenis Kelamin" name="Pria" id="Pria" />Pria
+      <br />
+      <input
+        type="radio"
+        name="Jenis Kelamin"
+        name="Wanita"
+        id="Wanita"
+      />Wanita <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
